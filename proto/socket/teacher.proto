@@ -1,0 +1,17 @@
+// websocket.proto
+syntax = "proto3";
+
+package socket;
+
+service Teacher {
+    rpc hello (Request) returns (Response) {}
+    rpc hello1 (Request) returns (Response) {}
+}
+
+message Request {
+    string message = 1;
+}   
+
+message Response {
+    string message = 1;
+}
